@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Resources/Fires.csv
+Resources/FPA_FOD_20170508.sqlite
