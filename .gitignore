@@ -127,6 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project
+Resources/CA_air_quality_annual_summary.csv
 Resources/Fires.csv
 Resources/FPA_FOD_20170508.sqlite
 Key.ipynb
