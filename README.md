@@ -3,7 +3,7 @@
 This project's goal is to analyze [fire data](https://www.kaggle.com/rtatman/188-million-us-wildfires) and analyze it with respect to [air quality data](https://www.kaggle.com/epa/epa-historical-air-quality). We will be looking at the following areas:
 
 * Comparing national fire data with California fire data
-* Comparing national fire data with national air quality data
+* Comparing Californa fire data with California annual air quality data
 * Looking at the correlation of counties with worse air quality and fires
 * Projecting fires (count, potential causes, counties most impacted, etc.) for the future
 
@@ -42,7 +42,14 @@ To run this project the following tools are needed:
 
 ## Usage
 
-Clone the respository and open and run the `TBD.ipynb` from Jupyter Notebook or Jupyter Labs.
+1. Clone the respository
+2. Download fire historical data from [1.88 Million US Wildfires](https://www.kaggle.com/rtatman/188-million-us-wildfires) to the `Resources` directory.
+3. Run the `Tools/FireDataExporter.ipynb` from Jupyter Notebook or Jupyter Labs to export the data from SQLLite to `Fires.csv` file which will contain the subset of data used for analysis
+4. Download and save the CA air quality data to the `Resources` directory. This can be done by running this helper [Kaggle notebook](https://www.kaggle.com/jagjeetkhalsa/airqualityexporter). Note the following:
+    * The notebook uses the BigQuery API and public [Historical Air Quality](https://www.kaggle.com/epa/epa-historical-air-quality) data to generate the CSV data
+    * The query can take a few minutes to complete
+    * Once it is completed the data used for analysis can be downloaded from the `output folder` in the data menu on the right side
+5. Open and run `FireAnalysis.ipynb` from Jupyter Notebook or Jupyter Labs to run the analysis.
 
 Analysis can be viewed in the individual cells.
 
@@ -56,4 +63,23 @@ The fire analysis made use of the following concepts and links:
 
 ### Reference Description
 
-* TBD link...
+#### FIPS Codes
+
+* https://www.nrcs.usda.gov/wps/portal/nrcs/detail/ca/home/?cid=nrcs143_013696
+
+#### Kaggle - BigQuery Data Limits
+
+* https://www.kaggle.com/product-feedback/48573
+
+#### Kaggle - Saving a DataFrame as a CSV
+
+* https://www.kaggle.com/getting-started/60617
+
+#### Kaggle - Using the BigQuery Helper Package
+
+* https://www.kaggle.com/sohier/introduction-to-the-bq-helper-package
+
+#### SQLite from Python and Pandas
+
+* https://datacarpentry.org/python-ecology-lesson/09-working-with-sql/index.html
+
