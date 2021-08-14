@@ -7,7 +7,7 @@ This project's goal is to analyze [fire data](https://www.kaggle.com/rtatman/188
 * Looking at the correlation of counties with worse air quality and fires
 * Projecting fires (count, counties most impacted, etc.) for the future
 
-All data is taken from [Kaggle](https://www.kaggle.com)
+All data is taken from [Kaggle](https://www.kaggle.com). See the `Major Findings` below or view the presentation for more details.
 
 ## Major Findings
 
