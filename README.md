@@ -5,9 +5,32 @@ This project's goal is to analyze [fire data](https://www.kaggle.com/rtatman/188
 * Comparing national fire data with California fire data
 * Comparing Californa fire data with California annual air quality data
 * Looking at the correlation of counties with worse air quality and fires
-* Projecting fires (count, potential causes, counties most impacted, etc.) for the future
+* Projecting fires (count, counties most impacted, etc.) for the future
 
 All data is taken from [Kaggle](https://www.kaggle.com)
+
+## Major Findings
+
+### Comparing national fire data with California fire data
+
+* While the number of fires is trending up nationally, the number of fires in California is trending down
+* National and California burn duration/year, average acreage and total acrege burned are trending up
+
+### Comparing Californa fire data with California annual air quality data
+
+* The counties most affected by fires are: Fresno, Lake, San Bernardino, Trinity
+* The counties with the worst days of air quality are: Calaveras, Placer, Inyo
+
+### Looking at the correlation of counties with worse air quality and fires
+
+* The worst fire counties are not the same as the worst air quality areas
+* The air moves based on wind patterns and affects other counties more
+
+### Projecting fires (count, potential causes, counties most impacted, etc.) for the future
+
+* Due to air patterns, the same counties will continue to be affected by poor air quality
+* While the number of fires in California may continue to decrease, the intensity of fires in terms of duration and acreage is likely to get worse.
+* At a national level, the number of fires, the intensity of fires in terms of duration and acreage is likely to get worse.
 
 ## Project Techical Requirements
 
@@ -49,7 +72,8 @@ To run this project the following tools are needed:
     * The notebook uses the BigQuery API and public [Historical Air Quality](https://www.kaggle.com/epa/epa-historical-air-quality) data to generate the CSV data
     * The query can take a few minutes to complete
     * Once it is completed the data used for analysis can be downloaded from the `output folder` in the data menu on the right side
-5. Open and run `FireAnalysis.ipynb` from Jupyter Notebook or Jupyter Labs to run the analysis.
+5. Open and run `FireAnalysis.ipynb` from Jupyter Notebook or Jupyter Labs to run the fire related analysis.
+6. Open and run `AirQualityCA.ipynb` and `CorrelationOfCountiesAndFire2015` from Jupyter Notebook or Jupyter Labs to run the air quality related analysis.
 
 Analysis can be viewed in the individual cells.
 
